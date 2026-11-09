@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DDL Labs Analyst</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-basic-dist-min@2.35.2/plotly-basic.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>DDL Labs Analyst</h1>
+        <p class="muted small">AI Data Analyst &amp; Business Intelligence Agent</p>
+      </div>
+    </div>
+    <div class="topbar-meta">
+      <span id="coverage" class="pill muted">Loading data…</span>
+      <span id="mode" class="pill" title="Which engine answers questions">…</span>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="dashboard" aria-label="Dashboard">
+      <div class="filters" role="group" aria-label="Date range">
+        <div class="segmented" id="presets"></div>
+        <form class="custom-range" id="custom-range">
+          <label>From <input type="date" id="start-date"></label>
+          <label>To <input type="date" id="end-date"></label>
+          <button type="submit" class="btn-secondary">Apply</button>
+        </form>
+      </div>
+      <p id="range-label" class="muted small range-label"></p>
+
+      <div class="kpis" id="kpis">
+        <article class="kpi" data-kpi="revenue"><h3>Revenue</h3><p class="kpi-value">–</p><p class="kpi-delta"></p></article>
+        <article class="kpi" data-kpi="orders"><h3>Orders</h3><p class="kpi-value">–</p><p class="kpi-delta"></p></article>
+        <article class="kpi" data-kpi="customers"><h3>Customers</h3><p class="kpi-value">–</p><p class="kpi-delta"></p></article>
+        <article class="kpi" data-kpi="average_order_value"><h3>Average order value</h3><p class="kpi-value">–</p><p class="kpi-delta"></p></article>
+      </div>
+
+      <div class="charts">
+        <article class="card chart-card" id="card-monthly_revenue"></article>
+        <article class="card chart-card" id="card-revenue_by_category"></article>
+        <article class="card chart-card" id="card-top_products"></article>
+        <article class="card chart-card" id="card-customer_trend"></article>
+      </div>
+
+      <section class="card insights" aria-labelledby="insights-title">
+        <div class="card-head">
+          <h2 id="insights-title">Key insights</h2>
+          <span id="insights-engine" class="tag"></span>
+        </div>
+        <ul id="insights" class="insight-list"><li class="muted">Generating insights…</li></ul>
+        <p id="insights-warning" class="warn" hidden></p>
+      </section>
+
+      <details class="card quality">
+        <summary><h2>Data quality report</h2><span class="muted small">How the raw data was cleaned</span></summary>
+        <div id="quality"></div>
+      </details>
+    </section>
+
+    <aside class="chat card" aria-label="Ask the analyst">
+      <div class="card-head chat-head">
+        <h2>Ask the analyst</h2>
+        <button id="clear-chat" class="btn-ghost small" type="button">Clear</button>
+      </div>
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="msg assistant intro">
+          <p>Ask a question about revenue, orders, products, categories or customers. Every figure is computed from the order database and checked before it is shown.</p>
+          <div id="examples" class="examples"></div>
+        </div>
+      </div>
+      <form id="ask-form" class="ask-form">
+        <textarea id="question" rows="2" maxlength="1000" placeholder="e.g. Why did revenue decline last month?" aria-label="Your question" required></textarea>
+        <button type="submit" id="ask-btn" class="btn-primary">Ask</button>
+      </form>
+    </aside>
+  </main>
+</body>
+</html>

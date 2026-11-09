@@ -1,0 +1,51 @@
+product_id,product_name,category,list_price,launch_date
+P001,Aurora Wireless Earbuds,Electronics,79.0,2024-11-01
+P002,Nimbus 27in 4K Monitor,Electronics,329.0,2024-11-01
+P003,Volt Fast Charger 65W,Electronics,$39.00,2024-11-01
+P004,Pulse Smartwatch S2,Electronics,199.0,2024-11-01
+P005,Echo Bluetooth Speaker,Electronics,$89.00,2025-04-22
+P006,Orbit Mechanical Keyboard,Electronics,119.0,2024-11-01
+P007,Glide Wireless Mouse,Electronics,45.0,2024-11-01
+P008,Lumen Laptop Stand,Electronics,59.0,2025-08-21
+P009,Vector Noise-Cancelling Headphones,Electronics,249.0,2024-11-01
+P010,Spark 10in Tablet,Electronics,299.0,2024-11-01
+P011,Retro Film Camera,Electronics,159.0,2024-11-01
+P012,Brew Master Coffee Maker,Home & Kitchen,129.0,2024-11-01
+P013,Chef Pro Knife Set,Home & Kitchen,149.0,2024-11-01
+P014,Aroma Essential Oil Diffuser,Home & Kitchen,$35.00,2024-11-01
+P015,Cozy Knit Throw Blanket,Home & Kitchen,$49.00,2024-11-01
+P016,Crisp Air Fryer 5L,Home & Kitchen,119.0,2024-11-01
+P017,Pure Water Filter Pitcher,Home & Kitchen,32.0,2025-07-20
+P018,Nest Bamboo Storage Set,Home & Kitchen,42.0,2024-11-01
+P019,Glow LED Desk Lamp  ,Home & Kitchen,38.0,2024-11-01
+P020,Steam Garment Steamer,Home & Kitchen,69.0,2024-11-01
+P021,Fresh Vacuum Food Sealer,Home & Kitchen,89.0,2024-11-01
+P022,Everyday Cotton Tee,Clothing,19.0,2024-11-01
+P023,Trail Fleece Jacket,Clothing,89.0,2024-11-01
+P024,Classic Slim Jeans,Clothing,$59.00,2024-11-01
+P025,Breeze Linen Shirt,Clothing,45.0,2024-11-01
+P026,Stride Running Shorts,Clothing,29.0,2025-07-12
+P027,Comfort Crew Socks 6-Pack,Clothing,18.0,2024-11-01
+P028,Urban Hooded Sweatshirt,Clothing,55.0,2024-11-01
+P029,Summit Rain Shell,Clothing,119.0,2024-11-01
+P030,Radiance Vitamin C Serum,Beauty,34.0,2024-11-01
+P031,Hydra Daily Moisturizer,Beauty,28.0,2024-11-01
+P032,Silk Hair Repair Mask,Beauty,22.0,2024-11-01
+P033,Bloom Eau de Parfum,Beauty,75.0,2024-11-01
+P034,Clear Skin Cleanser,Beauty,16.0,2024-11-01
+P035,Velvet Matte Lipstick,Beauty,18.0,2025-06-04
+P036,Glow Sunscreen SPF 50,Beauty,21.0,2024-11-01
+P037,Peak Yoga Mat,Sports & Outdoors,39.0,2024-11-01
+P038,Ridge Hiking Backpack 30L  ,Sports & Outdoors,99.0,2024-11-01
+P039,Flex Resistance Bands Set,Sports & Outdoors,$25.00,2024-11-01
+P040,Hydro Steel Water Bottle,Sports & Outdoors,29.0,2024-11-01
+P041,Apex Adjustable Dumbbells,Sports & Outdoors,249.0,2024-11-01
+P042,Trailblazer Camping Tent,Sports & Outdoors,189.0,2024-11-01
+P043,Swift Jump Rope,Sports & Outdoors,15.0,2024-11-01
+P044,The Data-Driven Retailer,Books,32.0,2024-11-01
+P045,Modern Python Recipes,Books,45.0,2024-11-01
+P046,Mindful Leadership  ,Books,$24.00,2024-11-01
+P047,Kitchen Science Cookbook,Books,$29.00,2025-04-08
+P048,Atlas of Hidden Places,Books,35.0,2024-11-01
+P049,Quiet Strength Novel,Books,18.0,2025-07-04
+P050,Gift Card Holder,,12.0,2024-11-01
